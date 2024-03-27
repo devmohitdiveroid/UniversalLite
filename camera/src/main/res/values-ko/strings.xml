@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="close">Close</string>
+
+    <!--    다이빙 화면-->
+    <string name="camera_menu_wide">광각</string>
+    <string name="camera_menu_ultra_wide">초광각</string>
+    <string name="camera_menu_zoom">줌</string>
+    <string name="camera_menu_selfie">셀피</string>
+
+    <string name="diving_camera_picture_failed">사진 촬영에 실패했습니다.</string>
+    <string name="diving_camera_eco_mode_failed_recording">녹화 중에는 절전모드를 사용할 수 없습니다.</string>
+    <string name="diving_camera_eco_mode_on">절전모드를 실행합니다.\n(해제: 아무버튼이나 누르기)</string>
+    <string name="diving_camera_eco_mode_off">절전모드를 해제합니다.</string>
+    <string name="diving_camera_eco_mode_on_title">절전모드 실행 중</string>
+    <string name="diving_camera_flash_failed_selfie">셀피모드에서는 플래시를 사용할 수 없습니다.</string>
+    <string name="diving_camera_flash_failed_not_support">이 디바이스는 플래시 기능을 지원하지 않습니다.</string>
+    <string name="diving_camera_underwater_mode_on">수중 촬영 모드 ON</string>
+    <string name="diving_camera_underwater_mode_off">수중 촬영 모드 OFF</string>
+
+    <string name="diving_location_send_failed_disabled">위치전송 설정되어 있지 않아 사용할 수 없습니다.</string>
+    <string name="diving_location_template">다이빙이 종료되었습니다. 입수포인트로 와주세요.</string>
+    <string name="diving_location_contact_empty">There is no registered contact.</string>
+
+    <string name="diving_running_time">시간</string>
+
+    <!--    보정화면-->
+    <string name="media_filter_item_empty">보정할 이미지 또는 동영상이 없습니다.\n다시 확인해주세요.</string>
+    <string name="media_filter_calibrating_format">보정중(%1$d/%2$d)</string>
+    <string name="media_filter_calibrating">보정 중…</string>
+    <string name="media_filter_save">저장</string>
+    <string name="media_filter_orig">원본</string>
+    <string name="media_filter_cancel">취소</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="retouch_video_filter_stop_guide">Press Stop if you do not want to save the video.</string>
+    <string name="retouch_save_after_filter_btn">Filter and save</string>
+    <string name="retouch_start_filter">Start Filter</string>
+    <string name="retouch_video_gallery_btn">Video Gallery</string>
+
+
+    <!-- DivingEndGuideFragment-->
+
+
+    <!--leess 보트콜링 비활성화-->
+
+</resources>

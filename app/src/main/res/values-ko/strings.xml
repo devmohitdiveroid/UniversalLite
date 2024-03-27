@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Universal Lite</string>
+    <string name="backkey_finish">뒤로가기 버튼을 한번 더 누르시면 앱이 종료됩니다.</string>
+    <string name="housing_serial_use_current_serial">지금 시리얼 사용하기</string>
+    <string name="cancel">취소</string>
+
+    <!--    다이빙 화면 -->
+    <string name="diving_location_contact_empty">등록된 연락처가 없습니다.</string>
+</resources>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_600">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lay_camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/gray_600"/>
+
+        <View
+            android:id="@+id/view_effect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:visibility="invisible"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lay_overlay_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25">
+
+            <!--        좌측 오버레이 영역 // 다이빙No, timer, -->
+
+            <include
+                android:id="@+id/battery_view"
+                layout="@layout/layout_battery"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:fontFamily="@font/pppangramsans_semibold"
+                android:layout_marginStart="8dp"
+                android:alpha="0.8"
+                app:layout_constraintStart_toEndOf="@id/battery_view"
+                app:layout_constraintTop_toTopOf="@id/battery_view" />
+
+            <TextView
+                android:id="@+id/txt_runtime_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diving_running_time"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:fontFamily="@font/pppangramsans_semibold"
+                android:layout_marginTop="30dp"
+                android:shadowDy="6"
+                android:shadowDx="6"
+                android:shadowRadius="8"
+                android:shadowColor="#606060"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_runtime_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0">
+                <TextView
+                    android:id="@+id/txt_runtime_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="48dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/pppangramsans_semibold"
+                    android:shadowColor="#606060"
+                    android:shadowDx="7.5"
+                    android:shadowDy="7.5"
+                    android:shadowRadius="10"
+                    android:text="35'"/>
+                <TextView
+                    android:id="@+id/txt_runtime_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/pppangramsans_semibold"
+                    android:shadowColor="#606060"
+                    android:shadowDx="7.5"
+                    android:shadowDy="7.5"
+                    android:shadowRadius="10"
+                    android:text="18"/>
+            </LinearLayout>
+
+            <com.diveroid.camera.ui.view.CameraModeView
+                android:id="@+id/camera_mode_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/flash_mode_view" />
+
+            <com.diveroid.camera.ui.view.FlashModeView
+                android:id="@+id/flash_mode_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/filter_mode_view"
+                android:visibility="gone"/>
+
+            <com.diveroid.camera.ui.view.FilterModeView
+                android:id="@+id/filter_mode_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/underwater_mode_view"/>
+
+            <com.diveroid.camera.ui.view.UnderwaterModeView
+                android:id="@+id/underwater_mode_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lay_overlay_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lay_overlay_center"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/lay_overlay_right"
+            app:layout_constraintStart_toEndOf="@id/lay_overlay_left"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.diveroid.camera.ui.view.RecordingIndicator
+                android:id="@+id/recording_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.diveroid.camera.ui.view.CameraMenuLayer
+                android:id="@+id/camera_menu_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_eco_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diving_camera_eco_mode_on_title"
+                android:textColor="#B2ffffff"
+                android:fontFamily="@font/pppangramsans_regular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.diveroid.camera.ui.view.AnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.diveroid.camera.ui.view.CameraGuideView
+            android:id="@+id/guide_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <com.diveroid.camera.housing.ClickViewLayer
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:isPortrait="@{false}"/>
+
+        <TextView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/pppangramsans_semibold"
+            android:shadowDy="6"
+            android:shadowDx="6"
+            android:shadowRadius="8"
+            android:shadowColor="#606060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

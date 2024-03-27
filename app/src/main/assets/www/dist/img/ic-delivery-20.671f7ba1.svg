@@ -1,0 +1,19 @@
+<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_617_8224" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="8" width="6" height="9">
+<path d="M14 8.66211H20V16.6621H17V14.6621H14V8.66211Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_617_8224)">
+<path d="M14.25 9.41211H16C17.7949 9.41211 19.25 10.8672 19.25 12.6621V15.6621C19.25 15.8002 19.1381 15.9121 19 15.9121H14.25V9.41211Z" stroke="black" stroke-width="1.5"/>
+</g>
+<mask id="mask1_617_8224" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="4" width="13" height="13">
+<path d="M2 4.66211H15V14.6621H14V16.6621H8V14.6621H5V16.6621H2V4.66211Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1_617_8224)">
+<mask id="path-4-inside-1_617_8224" fill="white">
+<rect x="2" y="4.66211" width="13" height="12" rx="1"/>
+</mask>
+<rect x="2" y="4.66211" width="13" height="12" rx="1" stroke="black" stroke-width="3" mask="url(#path-4-inside-1_617_8224)"/>
+</g>
+<circle cx="6.5" cy="16.1621" r="1.75" stroke="black" stroke-width="1.5"/>
+<circle cx="15.5" cy="16.1621" r="1.75" stroke="black" stroke-width="1.5"/>
+</svg>

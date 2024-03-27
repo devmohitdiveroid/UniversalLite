@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "611389905679",
+    "project_id": "universallite-b7563",
+    "storage_bucket": "universallite-b7563.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611389905679:android:2ce5a72bc33848fefd7c7a",
+        "android_client_info": {
+          "package_name": "com.diveroid.lite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611389905679-s07p6m3uner0f59tmjf9r1k3milqr7aq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr7h7aQIKuj_a3HBAEvA4E4yYs_ylqSY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611389905679-s07p6m3uner0f59tmjf9r1k3milqr7aq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "611389905679-8vhd0ej5eo1ib4hq17hvb3got46ihflr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.artisan-ocean.UniversalLite"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

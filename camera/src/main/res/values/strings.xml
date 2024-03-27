@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="close">Close</string>
+
+<!--    다이빙 화면-->
+    <string name="camera_menu_wide">Wide</string>
+    <string name="camera_menu_ultra_wide">Ultra Wide</string>
+    <string name="camera_menu_zoom">Zoom</string>
+    <string name="camera_menu_selfie">Selfie</string>
+
+    <string name="diving_camera_picture_failed">Failed to take photo.</string>
+    <string name="diving_camera_eco_mode_failed_recording">Low power mode cannot be used while recording</string>
+    <string name="diving_camera_eco_mode_on">Turn on low power mode.\nPress any button briefly to cancel the power saving mode.</string>
+    <string name="diving_camera_eco_mode_off">Turn off low power mode.</string>
+    <string name="diving_camera_eco_mode_on_title">Low power mode</string>
+    <string name="diving_camera_flash_failed_selfie">Flash cannot be used in selfie mode.</string>
+    <string name="diving_camera_flash_failed_not_support">This device does not support flash function.</string>
+    <string name="diving_camera_underwater_mode_on">Underwater Camera Mode ON</string>
+    <string name="diving_camera_underwater_mode_off">Underwater Camera Mode OFF</string>
+
+    <string name="diving_location_send_failed_disabled">Location send is not enabled and cannot be used.</string>
+    <string name="diving_location_template">The dive is over. Please come to the acquisition point.</string>
+    <string name="diving_location_contact_empty">There is no registered contact.</string>
+
+    <string name="diving_running_time">Time</string>
+
+<!--    보정화면-->
+    <string name="media_filter_item_empty">There are no images or videos to edit.\nPlease check again.</string>
+
+    <string name="media_filter_calibrating_format">Calibrating…(%1$d/%2$d)</string>
+
+    <string name="media_filter_calibrating">Calibrating…</string>
+    <string name="media_filter_save">Save</string>
+    <string name="media_filter_orig">Original</string>
+    <string name="media_filter_cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="retouch_video_filter_stop_guide">Press Stop if you do not want to save the video.</string>
+    <string name="retouch_save_after_filter_btn">Filter and save</string>
+    <string name="retouch_start_filter">Start Filter</string>
+    <string name="retouch_video_gallery_btn">Video Gallery</string>
+
+
+    <!-- DivingEndGuideFragment-->
+
+
+    <!--leess 보트콜링 비활성화-->
+
+</resources>

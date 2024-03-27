@@ -1,0 +1,30 @@
+<resources xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <!-- Base application theme. -->
+
+
+    <!-- DiveCom Main Tab Button Style-->
+
+    <!--  Log-in Process Text Style  -->
+
+
+    <!--    <style name="MainFontTextRegular">-->
+    <!--        <item name="android:fontFamily">@font/notosans_regular</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="MainFontTextBold">-->
+    <!--        <item name="android:fontFamily">@font/notosans_bold</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="MainFontTextMedium">-->
+    <!--        <item name="android:fontFamily">@font/notosans_medium</item>-->
+    <!--    </style>-->
+
+
+    <style name="Widget.Theme.DiveriodCameraAOS.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+        <item name="exampleColor">@color/light_blue_400</item>
+    </style>
+</resources>

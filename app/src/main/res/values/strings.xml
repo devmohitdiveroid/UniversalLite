@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Universal Lite</string>
+    <string name="backkey_finish">Press the Back button once again to close it.</string>
+    <string name="housing_serial_use_current_serial">Use this serial</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="diving_location_contact_empty">There is no selected contact.</string>
+</resources>

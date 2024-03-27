@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageButton
+        android:id="@+id/newButtonBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/filter_ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVideoGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_vertical"
+        android:text="@string/retouch_video_gallery_btn"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/newButtonClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/filter_ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  동영상이 보여줄 위치 가이드 제공 하는 역할도 병행 -->
+    <ImageView
+        android:id="@+id/imageViewVideoThumnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="130dp"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/newButtonPlayVideo"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/filter_ic_video_play"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewVideoThumnail"
+        app:layout_constraintEnd_toEndOf="@id/imageViewVideoThumnail"
+        app:layout_constraintStart_toStartOf="@id/imageViewVideoThumnail"
+        app:layout_constraintTop_toTopOf="@id/imageViewVideoThumnail" />
+
+    <ProgressBar
+        android:id="@+id/progressBarEncodePlaying"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="150dp"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/filter_progressbar_progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressBarEncodePlayingIn"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/filter_ic_rec_on"
+        app:layout_constraintBottom_toBottomOf="@id/progressBarEncodePlaying"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/progressBarEncodePlaying" />
+
+    <Button
+        android:id="@+id/newButtonSaveVideo"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="0.25"
+        android:background="#3787d1"
+        android:text="@string/retouch_save_after_filter_btn"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/newButtonStartFilter"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="0.25"
+        android:background="#c8ffffff"
+        android:text="@string/retouch_start_filter"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/newButtonResetFilter"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="84dp"
+        android:layout_weight="0.25"
+        android:background="#00000000"
+        android:src="@drawable/filter_ic_revert"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBarAdjustStrength"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="91dp"
+        android:layout_marginBottom="84dp"
+        android:max="150"
+        android:progress="80"
+        android:progressDrawable="@drawable/filter_seekbar_seekbar1"
+        android:thumb="@drawable/filter_seekbar_seekbar1_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/newButtonCompareVideo"
+        android:layout_width="55dp"
+        android:layout_height="27dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/filter_button_round_rect_shape"
+        android:src="@drawable/filter_ic_revert"
+        android:text="비교"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/newButtonStopIncode"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="0.25"
+        android:background="#c8ffffff"
+        android:text="중단"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/newButtonFinishShare"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/filter_button_round_rect_shape2"
+            android:text="공유"
+            android:textColor="#313131"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/newButtonFinishGallery"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/filter_button_round_rect_shape2"
+            android:text="갤러리"
+            android:textColor="#313131"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/newButtonStopIncodeExplane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/retouch_video_filter_stop_guide"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@id/newButtonStopIncode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBarFinishPlay"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="234dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/filter_seekbar_play"
+        android:thumb="@drawable/filter_seekbar_play_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFinishPlayCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#383838"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/seekBarFinishPlay"
+        app:layout_constraintTop_toBottomOf="@id/seekBarFinishPlay" />
+
+    <TextView
+        android:id="@+id/textViewFinishPlayTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#383838"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="@id/seekBarFinishPlay"
+        app:layout_constraintTop_toBottomOf="@id/seekBarFinishPlay" />
+
+    <ImageButton
+        android:id="@+id/newButtonFinishPlayVideo"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/filter_ic_video_play"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewVideoThumnail"
+        app:layout_constraintEnd_toEndOf="@id/imageViewVideoThumnail"
+        app:layout_constraintStart_toStartOf="@id/imageViewVideoThumnail"
+        app:layout_constraintTop_toTopOf="@id/imageViewVideoThumnail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

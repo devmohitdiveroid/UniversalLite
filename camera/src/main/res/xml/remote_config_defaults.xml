@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>housing_images_ko</key>
+        <value>[{"name":"유니버셜 프로","src":"https://firebasestorage.googleapis.com/v0/b/firebase-diveroid.appspot.com/o/DIVEROID%2FpublicSupport%2Fhousings%2Funi_pro.png?alt=media&amp;token=c756a72b-038d-4eb5-b361-d5131100eac2","key":"11"}
+            ,{"name":"씨프로그","src":"https://firebasestorage.googleapis.com/v0/b/firebase-diveroid.appspot.com/o/DIVEROID%2FpublicSupport%2Fhousings%2Fseefrog.png?alt=media&amp;token=895d078d-93d5-43f9-9643-df7aab8c21ea","key":"6"}
+            ,{"name":"메이콘","src":"https://firebasestorage.googleapis.com/v0/b/firebase-diveroid.appspot.com/o/DIVEROID%2FpublicSupport%2Fhousings%2Fmeicon.png?alt=media&amp;token=ca12e84a-f5e2-48b5-82e7-3c63eaa9a0b3","key":"3"}
+            ,{"name":"파티마","src":"https://firebasestorage.googleapis.com/v0/b/firebase-diveroid.appspot.com/o/DIVEROID%2FpublicSupport%2Fhousings%2Fpatima.png?alt=media&amp;token=3927ba14-0ba8-46f1-9371-2957f7863c1a","key":"8"}
+            ,{"name":"Xpoovv","src":"https://firebasestorage.googleapis.com/v0/b/firebase-diveroid.appspot.com/o/DIVEROID%2FpublicSupport%2Fhousings%2Fxpoov.png?alt=media&amp;token=858bf501-b251-4089-85df-51e7cbe8d2cb","key":"12"}
+            ,{"name":"엠팩","src":"https://firebasestorage.googleapis.com/v0/b/firebase-diveroid.appspot.com/o/DIVEROID%2FpublicSupport%2Fhousings%2Fmpack.png?alt=media&amp;token=180a0aa2-00ea-4dbf-bed5-da179da91b0a","key":"4"}]</value>
+    </entry>
+    <entry>
+        <key>debugErrKey</key>
+        <value>None</value>
+    </entry>
+    <entry>
+        <key>lastest_version_android_renewal</key>
+        <value>1.0.11</value>
+    </entry>
+    <entry>
+        <key>android_version_force_renewal</key>
+        <value>false</value>
+    </entry>
+</defaultsMap>

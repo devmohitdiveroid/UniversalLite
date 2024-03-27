@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/scanCameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/scanAreaViewLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_centerVertical="true"
+        >
+
+        <View
+            android:id="@+id/scan_border_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/background_border_white"
+
+            />
+
+        <TextView
+            android:id="@+id/scan_serial_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCAN"
+            style="@style/MainFontTextBold"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="#66000000" />
+
+        <View
+            android:id="@+id/scan_animation_view"
+            android:layout_width="3dp"
+            android:alpha="0"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/scan_percent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:alpha="0"
+        android:layout_below="@id/scanAreaViewLayout"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/camera_commit"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/camera_cancel"
+        android:scaleType="fitCenter"
+        android:text="@string/housing_serial_use_current_serial"
+        android:elevation="2dp"
+        android:textColor="@color/white"
+        android:background="@drawable/background_blue_radius"
+        />
+
+    <Button
+        android:id="@+id/camera_cancel"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="fitCenter"
+        android:text="@string/cancel"
+        android:elevation="2dp"
+        android:background="@drawable/background_white_radius"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
